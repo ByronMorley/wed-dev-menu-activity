@@ -1,0 +1,61 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                NAV.LESS
+-----------------------------------------*/
+
+.nav {
+
+  height: @config-header-height;
+
+  ul {
+    overflow: hidden;
+    padding:0;
+    margin:0;
+  }
+
+  a {
+    line-height:@config-header-height;
+    display:block;
+    padding:0 10px;
+
+    &.current {
+
+    }
+    &:hover {
+
+      background-color:@gamma-color;
+      &.current {
+
+      }
+    }
+  }
+
+  & > ul {
+
+    & > li {
+
+      float:left;
+
+      & > ul {
+
+          display:none;
+
+        & > li {
+
+        }
+      }
+      & > a {
+
+        color: #000;
+
+        &.current {
+          color: #000;
+        }
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}
